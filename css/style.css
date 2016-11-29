@@ -39,3 +39,53 @@ body {
         .odd {
             background-color: #f6f6f6;
         }
+        .line {
+          width:25px;
+          height: 3px;
+          margin: 4px 0;
+          background-color:#a493d1;
+        }
+        .button:hover > div {
+            background-color: #fff;
+        }
+        .button:hover {
+            cursor: pointer;
+        }
+        .button {
+            position: fixed;
+            padding: 10px;
+            z-index: 101;
+        }
+
+        .sidebar {
+            /*display: none;*/
+            position: fixed;
+            top: 0px;
+            width: 0px;
+            min-height: 100%;
+            background-color: #271b3b;
+            z-index: 10;
+            -webkit-transition: width 0.2s;
+            transition: width 0.2s;
+        }
+        .sidebar-layer {
+            display: inline-block;
+            display: none;
+            position: fixed;
+            top: 0px;
+            width: 100%;
+            min-height: 100%;
+            background-color: #000;
+            z-index: 9;
+            opacity: 0.5;
+        }
+        .sidebar-icon img  {
+            width: 70px;
+            margin: 45px 0px 10px 0;
+            display: none;
+        }
+        .sidebar-name p {
+            color: #A493D1;
+            display: none;
+            font-size: 13px;
+        }
